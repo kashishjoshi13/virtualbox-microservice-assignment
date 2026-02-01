@@ -23,25 +23,25 @@ A Node.js and Express-based REST API is hosted on one virtual machine (Backend V
 ## Virtual Machines Used
 
 ### VM1 – Backend Server
-- Operating System: Ubuntu 22.04 LTS  
-- Role: Backend Microservice Host  
-- IP Address: 192.168.186.3  
-- Technology Stack: Node.js, Express.js  
-- Listening Port: 3000  
-- API Endpoint: /api  
+- Operating System: Ubuntu 22.04 LTS  
+- Role: Backend Microservice Host  
+- IP Address: 192.168.186.3  
+- Technology Stack: Node.js, Express.js  
+- Listening Port: 3000  
+- API Endpoint: /api  
 
 ### VM2 – Client
-- Operating System: Ubuntu 22.04 LTS  
-- Role: Client VM to consume the backend service  
-- IP Address: 192.168.186.4  
-- Tool Used: curl  
-- Status: VM2 was powered on and used to test the backend microservice running on VM1  
+- Operating System: Ubuntu 22.04 LTS  
+- Role: Client VM to consume the backend service  
+- IP Address: 192.168.186.4  
+- Tool Used: curl  
+- Status: VM2 was powered on and used to test the backend microservice running on VM1  
 
 ---
 
 ## Network Configuration
-- Network Type: Host-Only Adapter  
-- Subnet: 192.168.186.0/24  
+- Network Type: Host-Only Adapter  
+- Subnet: 192.168.186.0/24  
 
 Both VM1 and VM2 were powered on simultaneously and connected to the same Host-Only network, enabling secure and direct VM-to-VM communication without internet dependency.
 
@@ -51,13 +51,13 @@ Both VM1 and VM2 were powered on simultaneously and connected to the same Host-O
 The backend microservice is a simple REST API built using Express.js and hosted on VM1.
 
 ### API Details
-- Method: GET  
-- Endpoint: /api  
+- Method: GET  
+- Endpoint: /api  
 
 ### API Response
 ```json
 {
-  "message": "Hello from Backend VM"
+  "message": "Hello from Backend VM"
 }
 ````
 
@@ -170,5 +170,7 @@ Kashish Joshi
 VirtualBox Microservice Assignment
 
 ```
+
+---
 
 
